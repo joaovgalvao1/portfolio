@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Vitor Godoy - Back-End Developer | Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <div id="particles-js"></div>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">João Vitor</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Mim</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar Tema"><i class="fas fa-moon"></i></button>
+                <button class="menu-toggle" aria-label="Abrir Menu"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="container">
+            <p class="subtitle">Vamos Conectar</p>
+            <h1>Entre em Contato</h1>
+            <p class="section-description">Tem uma ideia, oportunidade ou só quer trocar uma ideia sobre programação? Ficarei feliz em conversar. Use o formulário ou os canais ao lado.</p>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Informações</h2>
+                    <p><i class="fas fa-envelope"></i> joao.vitor.gvg@outlook.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Recife, PE - Brasil</p>
+                    <p><i class="fas fa-graduation-cap"></i> CIn-UFPE &amp; Cesar School</p>
+                    <div class="social-links-contact">
+                        <a href="https://github.com/joaovgalvao1" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/joaovgodoy/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="mailto:joao.vitor.gvg@outlook.com"><i class="fas fa-envelope"></i> E-mail</a>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form" action="https://formsubmit.co/joao.vitor.gvg@outlook.com" method="POST">
+                    <input type="hidden" name="_subject" value="Novo contato pelo portfólio - João Vitor">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+
+                    <h2>Envie uma Mensagem</h2>
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    <p class="form-feedback" id="form-feedback"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> João Vitor Godoy. Todos os direitos reservados.</p>
+            <div class="social-links-footer">
+                <a href="https://github.com/joaovgalvao1" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/joaovgodoy/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:joao.vitor.gvg@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
