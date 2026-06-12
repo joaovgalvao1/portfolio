@@ -2,7 +2,7 @@
 
 Site de portfólio pessoal desenvolvido com **HTML, CSS e JavaScript**, apresentando minha jornada como estudante de programação com foco em **Back-End** e interesse em **Inteligência Artificial**.
 
-🔗 **Acesse online:** (...)
+🔗 **Acesse online:** https://joaovgalvao1.github.io/portfolio/
 
 ---
 
