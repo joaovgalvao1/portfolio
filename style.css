@@ -407,6 +407,9 @@ body.light-theme .terminal {
     white-space: pre;        /* mantém o código em uma linha */
     overflow-x: auto;        /* rola só em telas muito pequenas */
 }
+.terminal-body .t-line {
+    display: block;
+}
 .terminal-body .tk-key { color: #f472b6; }      /* palavras-chave */
 .terminal-body .tk-var { color: #22d3ee; }      /* variáveis */
 .terminal-body .tk-str { color: #86efac; }      /* strings */
@@ -1032,6 +1035,19 @@ body.light-theme .main-footer {
     h3 { font-size: 1.8rem; }
     p { font-size: 1rem; }
     .subtitle { font-size: 1.2rem; }
+
+    /* No celular, o código quebra a linha em vez de rolar para o lado */
+    .terminal-body {
+        white-space: pre-wrap;
+        word-break: break-word;
+        font-size: 0.78rem;
+        padding: 16px;
+    }
+    /* Recuo deslizante: a continuação da linha alinha com o código acima */
+    .terminal-body .t-line {
+        padding-left: 8ch;
+        text-indent: -8ch;
+    }
 
     .container {
         width: 100%;
