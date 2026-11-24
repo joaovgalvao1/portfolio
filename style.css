@@ -812,6 +812,43 @@ body.light-theme .projects-preview {
     color: var(--text-primary);
 }
 
+.vision-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    text-align: left;
+}
+.vision-card {
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-top: 4px solid var(--accent-color);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 12px 28px var(--shadow-color);
+}
+.vision-card h3 {
+    font-size: 1.5rem;
+    color: var(--text-heading);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.vision-card h3 i {
+    color: var(--accent-color);
+}
+.future-vision .vision-card p {
+    max-width: none;
+    margin: 0;
+    font-size: 1.05rem;
+}
+@media (max-width: 768px) {
+    .vision-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Contact Section */
 .contact-hero {
     padding: 5rem 0;
